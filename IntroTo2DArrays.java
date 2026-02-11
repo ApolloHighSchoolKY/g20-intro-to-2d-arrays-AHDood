@@ -47,10 +47,11 @@ int sum =1;
     //Column 1: ??
     //...
     //Column 5: ??
-    int result =0;
+    
 
     for(int col=0; col<twoDee[0].length;col++)
     {
+      sum=0;
       for(int row = 0; row<twoDee.length;row++)
       {
         result = result + twoDee[row][col];
@@ -58,7 +59,7 @@ int sum =1;
       }
       //this spot here represents the completion of one row
       System.out.println("Column"+  col + ":" + result);
-      result = 0;
+      sum=0;
     }
   
   }
